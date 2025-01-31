@@ -2,7 +2,6 @@ import os
 import requests
 from bs4 import BeautifulSoup
 
-
 class Website:
     
     url: str
@@ -33,7 +32,7 @@ class Website:
             print(f"Ocorreu um erro: {e}")
 
     def get_title_text(self):
-        return f"Webpage Title:\n {self.title}\nWebpage Contents:\n{self.text}\n\n" 
-
+        return f"Webpage Title:\n {self.title}\n Webpage Contents:\n{self.text}\n\n"
+        
     def get_links(self):
         return f"Webpage links: {self.links}" 
